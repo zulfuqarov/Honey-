@@ -119,7 +119,7 @@ h4 a,
 h5 a,
 h6 a {
      color: #fff;
-     text-decoration: none!important;
+     text-decoration: none !important;
      opacity: 1
 }
 
@@ -166,7 +166,19 @@ img {
      height: auto;
 }
 
- :focus {
+
+/* me style start */
+@media (max-width: 768px) {
+     .custom-hiddem {
+          display: none !important;
+     }
+}
+
+/* me style end */
+
+
+
+:focus {
      outline: 0;
 }
 
@@ -339,6 +351,15 @@ button {
      padding: 27px 30px;
 }
 
+@media (max-width: 768px) {
+     .header {
+          margin: 0 !important;
+     }
+     .slider_main{
+          padding-top: 0 !important;
+     }
+}
+
 .di_mr0 {
      display: none;
 }
@@ -410,17 +431,37 @@ ul.email li i {
 
 ul.conta_top {
      display: flex;
-     align-items: center;
-     flex-wrap: wrap;
-     padding-top: 25px;
+     justify-content: space-around;
+     /* align-items: center; */
+     /* flex-wrap: wrap; */
+     /* padding-top: 25px; */
+}
+
+@media (max-width:1180px) {
+
+
+     ul.conta_top li {
+          /* padding-bottom: 20px; */
+          font-size: 16px;
+          line-height: 11px;
+          /* padding-right: 46px; */
+     }
+}
+
+@media (max-width:768px) {
+
+     ul.conta_top {
+          display: none;
+     }
+
 }
 
 ul.conta_top li {
      text-align: left;
-     padding-bottom: 20px;
+     /* padding-bottom: 20px; */
      font-size: 16px;
      line-height: 11px;
-     padding-right: 46px;
+     /* padding-right: 46px; */
 }
 
 ul.conta_top li:last-child {
